@@ -10,7 +10,14 @@ Protected Class configJSON
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Sub write(o as object)
+		Function write() As boolean
+		  // write test data
+		  
+		  hostName = "api.fvh.fi"
+		  staHost = New staHostInfo
+		  staHost.hostName = "api.fvh.fi"
+		  staHost.hostPort = 4403
+		  
 		  // convert all properties into JSON objects
 		  
 		  dim cDictArray() as Xojo.Core.Dictionary
@@ -18,7 +25,7 @@ Protected Class configJSON
 		  
 		  // get all the properties of this class instance
 		  
-		  dim props() as Introspection.PropertyInfo = Introspection.GetType(o).GetProperties
+		  dim props() as Introspection.PropertyInfo = Introspection.GetType(self).GetProperties
 		  
 		  for i as integer = 0 to uBound(props)
 		    
@@ -26,7 +33,7 @@ Protected Class configJSON
 		    
 		    // TODO other property types than text/string
 		    
-		    d.Value(props(i).name) = props(i).value(o)
+		    d.Value(props(i).name) = props(i).value(self)
 		    
 		    cDictArray.append(d)
 		    
@@ -37,6 +44,7 @@ Protected Class configJSON
 		  dim confFile as FolderItem = SpecialFolder.Preferences
 		  
 		  if confFile <> Nil then
+		    
 		    dim f as FolderItem = confFile.Child("com.fvh.RandomThings.config")
 		    if f<>nil then
 		      
@@ -52,7 +60,8 @@ Protected Class configJSON
 		    end
 		  end
 		  
-		End Sub
+		  return true
+		End Function
 	#tag EndMethod
 
 
@@ -67,6 +76,10 @@ Protected Class configJSON
 
 	#tag Property, Flags = &h0
 		hostName As Text = "esx01.domain.lan"
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		staHost As staHostInfo
 	#tag EndProperty
 
 
@@ -103,6 +116,18 @@ Protected Class configJSON
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="appVersion"
+			Group="Behavior"
+			Type="string"
+			EditorType="MultiLineEditor"
+		#tag EndViewProperty
+		#tag ViewProperty
+			Name="hostName"
+			Group="Behavior"
+			InitialValue="esx01.domain.lan"
+			Type="Text"
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

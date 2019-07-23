@@ -25,7 +25,7 @@ Begin Window HostWin
    Resizeable      =   False
    Title           =   "SensorThings Server Host"
    Visible         =   True
-   Width           =   408
+   Width           =   410
    Begin PushButton pbOK
       AutoDeactivate  =   True
       Bold            =   False
@@ -940,5 +940,10 @@ End
 		InitialValue="True"
 		Type="Boolean"
 		EditorType="Boolean"
+	#tag EndViewProperty
+	#tag ViewProperty
+		Name="modeEdit"
+		Group="Behavior"
+		Type="Boolean"
 	#tag EndViewProperty
 #tag EndViewBehavior

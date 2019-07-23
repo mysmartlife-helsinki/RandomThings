@@ -507,7 +507,7 @@ End
 		  dim cNode as JSONNode
 		  dim ciNode,c2node,c3node as JSONNode
 		  
-		  https.Secure = True // sets port to 443
+		  https.Secure = True // sets port to 443 because why not
 		  https.ConnectionType = SSLSocket.TLSv12
 		  https.SetRequestHeader("User-Agent:","RandomThingsUtility")
 		  

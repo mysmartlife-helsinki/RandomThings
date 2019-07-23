@@ -9,7 +9,7 @@ Begin Window MainWin
    FullScreen      =   False
    FullScreenButton=   False
    HasBackColor    =   False
-   Height          =   538
+   Height          =   560
    ImplicitInstance=   True
    LiveResize      =   True
    MacProcID       =   0
@@ -23,7 +23,7 @@ Begin Window MainWin
    MinWidth        =   64
    Placement       =   0
    Resizeable      =   False
-   Title           =   "RandomThings Utility"
+   Title           =   "RandomThings"
    Visible         =   True
    Width           =   607
    Begin Label Label1
@@ -186,7 +186,7 @@ Begin Window MainWin
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   104
+      Top             =   87
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -218,7 +218,7 @@ Begin Window MainWin
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   103
+      Top             =   86
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -250,7 +250,7 @@ Begin Window MainWin
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   104
+      Top             =   87
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -279,7 +279,7 @@ Begin Window MainWin
       TabIndex        =   22
       TabPanelIndex   =   0
       TabStop         =   True
-      Text            =   "Sensor:"
+      Text            =   "Thing:"
       TextAlign       =   0
       TextColor       =   &c00000000
       TextFont        =   "System"
@@ -413,52 +413,20 @@ Begin Window MainWin
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   104
+      Top             =   87
       Transparent     =   False
       Underline       =   False
       Visible         =   True
       Width           =   60
    End
    Begin Timer Timer1
+      Enabled         =   True
       Index           =   -2147483648
       LockedInPosition=   False
       Mode            =   0
       Period          =   1000
       Scope           =   0
       TabPanelIndex   =   0
-   End
-   Begin CheckBox cbIncludeTrail
-      AutoDeactivate  =   True
-      Bold            =   False
-      Caption         =   "Include Trail Assets"
-      DataField       =   ""
-      DataSource      =   ""
-      Enabled         =   True
-      Height          =   20
-      HelpTag         =   ""
-      Index           =   -2147483648
-      InitialParent   =   ""
-      Italic          =   False
-      Left            =   31
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      Scope           =   0
-      State           =   0
-      TabIndex        =   34
-      TabPanelIndex   =   0
-      TabStop         =   True
-      TextFont        =   "System"
-      TextSize        =   0.0
-      TextUnit        =   0
-      Top             =   80
-      Transparent     =   False
-      Underline       =   False
-      Value           =   False
-      Visible         =   True
-      Width           =   168
    End
    Begin GroupBox GroupBox1
       AutoDeactivate  =   True
@@ -483,7 +451,7 @@ Begin Window MainWin
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   343
+      Top             =   365
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -517,7 +485,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   359
+         Top             =   381
          Transparent     =   False
          Underline       =   False
          Visible         =   True
@@ -560,7 +528,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   382
+         Top             =   404
          Transparent     =   False
          Underline       =   False
          UseFocusRing    =   True
@@ -596,7 +564,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   383
+         Top             =   405
          Transparent     =   False
          Underline       =   False
          Visible         =   True
@@ -631,7 +599,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   408
+         Top             =   430
          Transparent     =   False
          Underline       =   False
          Visible         =   True
@@ -666,7 +634,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   427
+         Top             =   449
          Transparent     =   False
          Underline       =   False
          Visible         =   True
@@ -701,7 +669,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   448
+         Top             =   470
          Transparent     =   False
          Underline       =   False
          Visible         =   True
@@ -745,7 +713,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   472
+         Top             =   494
          Transparent     =   False
          Underline       =   False
          Value           =   False
@@ -758,7 +726,7 @@ Begin Window MainWin
       Bold            =   False
       Caption         =   "Language"
       Enabled         =   True
-      Height          =   118
+      Height          =   177
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
@@ -776,7 +744,7 @@ Begin Window MainWin
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   213
+      Top             =   176
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -804,7 +772,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   249
+         Top             =   212
          Transparent     =   False
          Underline       =   False
          Value           =   False
@@ -834,7 +802,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   271
+         Top             =   234
          Transparent     =   False
          Underline       =   False
          Value           =   True
@@ -864,7 +832,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   292
+         Top             =   255
          Transparent     =   False
          Underline       =   False
          Value           =   False
@@ -875,9 +843,9 @@ Begin Window MainWin
    Begin GroupBox GroupBox3
       AutoDeactivate  =   True
       Bold            =   False
-      Caption         =   "Observed Property"
+      Caption         =   "Unit of Measurement"
       Enabled         =   True
-      Height          =   118
+      Height          =   177
       HelpTag         =   ""
       Index           =   -2147483648
       InitialParent   =   ""
@@ -895,19 +863,19 @@ Begin Window MainWin
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   213
+      Top             =   176
       Transparent     =   False
       Underline       =   False
       Visible         =   True
       Width           =   415
-      Begin RadioButton rbFintoUCUM
+      Begin RadioButton rbFinto
          AutoDeactivate  =   True
          Bold            =   False
          Caption         =   "Finto UCUM"
          Enabled         =   True
          Height          =   20
          HelpTag         =   ""
-         Index           =   -2147483648
+         Index           =   0
          InitialParent   =   "GroupBox3"
          Italic          =   False
          Left            =   30
@@ -923,12 +891,12 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   241
+         Top             =   204
          Transparent     =   False
          Underline       =   False
          Value           =   True
          Visible         =   True
-         Width           =   100
+         Width           =   173
       End
       Begin PopupMenu pmTopConcepts
          AutoDeactivate  =   True
@@ -942,7 +910,7 @@ Begin Window MainWin
          InitialParent   =   "GroupBox3"
          InitialValue    =   ""
          Italic          =   False
-         Left            =   175
+         Left            =   215
          ListIndex       =   0
          LockBottom      =   False
          LockedInPosition=   False
@@ -956,11 +924,11 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   240
+         Top             =   203
          Transparent     =   False
          Underline       =   False
          Visible         =   True
-         Width           =   240
+         Width           =   200
       End
       Begin PopupMenu pmConcept
          AutoDeactivate  =   True
@@ -974,7 +942,7 @@ Begin Window MainWin
          InitialParent   =   "GroupBox3"
          InitialValue    =   ""
          Italic          =   False
-         Left            =   175
+         Left            =   215
          ListIndex       =   0
          LockBottom      =   False
          LockedInPosition=   False
@@ -988,11 +956,11 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   272
+         Top             =   235
          Transparent     =   False
          Underline       =   False
          Visible         =   True
-         Width           =   240
+         Width           =   200
       End
       Begin PopupMenu pmPrefix
          AutoDeactivate  =   True
@@ -1006,7 +974,7 @@ Begin Window MainWin
          InitialParent   =   "GroupBox3"
          InitialValue    =   ""
          Italic          =   False
-         Left            =   175
+         Left            =   215
          ListIndex       =   0
          LockBottom      =   False
          LockedInPosition=   False
@@ -1020,11 +988,76 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   304
+         Top             =   267
          Transparent     =   False
          Underline       =   False
          Visible         =   True
-         Width           =   240
+         Width           =   200
+      End
+      Begin Label Label12
+         AutoDeactivate  =   True
+         Bold            =   False
+         DataField       =   ""
+         DataSource      =   ""
+         Enabled         =   True
+         Height          =   20
+         HelpTag         =   ""
+         Index           =   -2147483648
+         InitialParent   =   "GroupBox3"
+         Italic          =   False
+         Left            =   103
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         Multiline       =   False
+         Scope           =   0
+         Selectable      =   False
+         TabIndex        =   4
+         TabPanelIndex   =   0
+         TabStop         =   True
+         Text            =   "Prefix:"
+         TextAlign       =   2
+         TextColor       =   &c00000000
+         TextFont        =   "System"
+         TextSize        =   0.0
+         TextUnit        =   0
+         Top             =   268
+         Transparent     =   False
+         Underline       =   False
+         Visible         =   True
+         Width           =   100
+      End
+      Begin RadioButton rbFinto
+         AutoDeactivate  =   True
+         Bold            =   False
+         Caption         =   "Finto CityKEYS"
+         Enabled         =   True
+         Height          =   20
+         HelpTag         =   ""
+         Index           =   1
+         InitialParent   =   "GroupBox3"
+         Italic          =   False
+         Left            =   30
+         LockBottom      =   False
+         LockedInPosition=   False
+         LockLeft        =   True
+         LockRight       =   False
+         LockTop         =   True
+         Scope           =   0
+         TabIndex        =   5
+         TabPanelIndex   =   0
+         TabStop         =   True
+         TextFont        =   "System"
+         TextSize        =   0.0
+         TextUnit        =   0
+         Top             =   236
+         Transparent     =   False
+         Underline       =   False
+         Value           =   False
+         Visible         =   True
+         Width           =   173
       End
    End
    Begin GroupBox GroupBox4
@@ -1050,7 +1083,7 @@ Begin Window MainWin
       TextFont        =   "System"
       TextSize        =   0.0
       TextUnit        =   0
-      Top             =   343
+      Top             =   365
       Transparent     =   False
       Underline       =   False
       Visible         =   True
@@ -1078,7 +1111,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   359
+         Top             =   381
          Transparent     =   False
          Underline       =   False
          Value           =   True
@@ -1122,7 +1155,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   358
+         Top             =   380
          Transparent     =   False
          Underline       =   False
          UseFocusRing    =   True
@@ -1152,7 +1185,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   413
+         Top             =   435
          Transparent     =   False
          Underline       =   False
          Value           =   False
@@ -1196,7 +1229,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   412
+         Top             =   434
          Transparent     =   False
          Underline       =   False
          UseFocusRing    =   True
@@ -1232,7 +1265,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   413
+         Top             =   435
          Transparent     =   False
          Underline       =   False
          Visible         =   True
@@ -1267,7 +1300,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   445
+         Top             =   467
          Transparent     =   False
          Underline       =   False
          Visible         =   True
@@ -1310,7 +1343,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   444
+         Top             =   466
          Transparent     =   False
          Underline       =   False
          UseFocusRing    =   True
@@ -1320,7 +1353,7 @@ Begin Window MainWin
       Begin CheckBox cbMoving
          AutoDeactivate  =   True
          Bold            =   False
-         Caption         =   "Moving Sensor"
+         Caption         =   "Moving Sensor Simulation"
          DataField       =   ""
          DataSource      =   ""
          Enabled         =   True
@@ -1343,7 +1376,7 @@ Begin Window MainWin
          TextFont        =   "System"
          TextSize        =   0.0
          TextUnit        =   0
-         Top             =   478
+         Top             =   500
          Transparent     =   False
          Underline       =   False
          Value           =   False
@@ -1538,6 +1571,13 @@ End
 	#tag Event
 		Sub Action()
 		  LocationWin.show
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events pmAddThing
+	#tag Event
+		Sub Action()
+		  ThingWin.show
 		End Sub
 	#tag EndEvent
 #tag EndEvents

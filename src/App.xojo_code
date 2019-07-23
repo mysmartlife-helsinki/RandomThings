@@ -4,7 +4,8 @@ Inherits Application
 	#tag Event
 		Sub Close()
 		  if myConfig<>nil then
-		    myConfig.write(myConfig)
+		    do
+		    loop until myConfig.write
 		  end
 		End Sub
 	#tag EndEvent
