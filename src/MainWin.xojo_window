@@ -420,7 +420,6 @@ Begin Window MainWin
       Width           =   60
    End
    Begin Timer Timer1
-      Enabled         =   True
       Index           =   -2147483648
       LockedInPosition=   False
       Mode            =   0

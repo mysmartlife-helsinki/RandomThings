@@ -2,7 +2,19 @@
 Protected Class configJSON
 	#tag Method, Flags = &h0
 		Function read() As boolean
+		  using EinhugurJSON
 		  
+		  dim root as New JSONObject()
+		  
+		  dim earr As JSONArray = new JSONArray()
+		  dim kvarr as JSONArray = new JSONArray()
+		  dim harr As JSONArray = new JSONArray()
+		  
+		  root("Enumerations") = earr
+		  
+		  root("Values") = kvarr
+		  
+		  root("Hosts") =harr
 		  
 		  
 		  return true
@@ -10,10 +22,10 @@ Protected Class configJSON
 	#tag EndMethod
 
 	#tag Method, Flags = &h0
-		Function write() As boolean
+		Sub write(o as object)
 		  // write test data
 		  
-		  hostName = "api.fvh.fi"
+		  hostName = "esx01.fvh.fi"
 		  staHost = New staHostInfo
 		  staHost.hostName = "api.fvh.fi"
 		  staHost.hostPort = 4403
@@ -25,7 +37,7 @@ Protected Class configJSON
 		  
 		  // get all the properties of this class instance
 		  
-		  dim props() as Introspection.PropertyInfo = Introspection.GetType(self).GetProperties
+		  dim props() as Introspection.PropertyInfo = Introspection.GetType(o).GetProperties
 		  
 		  for i as integer = 0 to uBound(props)
 		    
@@ -33,7 +45,7 @@ Protected Class configJSON
 		    
 		    // TODO other property types than text/string
 		    
-		    d.Value(props(i).name) = props(i).value(self)
+		    d.Value(props(i).name) = props(i).value(o)
 		    
 		    cDictArray.append(d)
 		    
@@ -44,7 +56,6 @@ Protected Class configJSON
 		  dim confFile as FolderItem = SpecialFolder.Preferences
 		  
 		  if confFile <> Nil then
-		    
 		    dim f as FolderItem = confFile.Child("com.fvh.RandomThings.config")
 		    if f<>nil then
 		      
@@ -60,8 +71,7 @@ Protected Class configJSON
 		    end
 		  end
 		  
-		  return true
-		End Function
+		End Sub
 	#tag EndMethod
 
 

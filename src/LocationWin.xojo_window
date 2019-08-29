@@ -501,7 +501,7 @@ End
 	#tag Method, Flags = &h0
 		Function GeocodingAPI(addr as string) As string
 		  dim https as New HTTPSecureSocket
-		  dim url,data,latlong,lat,lon as string
+		  dim url,data,lat,lon as string
 		  dim node as JSONNode
 		  dim nodeArray as JSONNode
 		  dim cNode as JSONNode
